@@ -69,7 +69,11 @@ Describes how to add Kotlin support to both a method-based problem (`addone`) an
 
 # Authoring Problems
 
-You are free to author problems in this repository.
+You are free to author problems in a fork of this repository.
+**However, please be aware that your repository will contain solution code!
+Therefore it _must_ be kept private.**
+We will not accept problems for use on course assessments that are maintained in public repositories.
+
 Please put them under an appropriate package name.
 Note that anything under `com.examples` is ignored during problem upload, so choose a different package name.
 If you are working on problems for CS 124, `edu.illinois.cs.cs124.questioner.<Your NetID>` may be an appropriate package root and help avoid conflicts with other other authors.
