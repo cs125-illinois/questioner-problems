@@ -5,7 +5,7 @@ plugins {
     checkstyle
     id("com.github.sherter.google-java-format") version "0.9"
     id("org.jmailen.kotlinter") version "3.4.4"
-    id("com.github.cs125-illinois.questioner") version "2021.6.1"
+    id("com.github.cs125-illinois.questioner") version "2021.6.3"
     id("com.github.ben-manes.versions") version "0.39.0"
     id("io.gitlab.arturbosch.detekt") version "1.17.1"
 }
@@ -16,7 +16,7 @@ repositories {
 }
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.github.cs125-illinois.questioner:lib:2021.6.1")
+    implementation("com.github.cs125-illinois.questioner:lib:2021.6.3")
 }
 tasks.withType<Test> {
     useJUnitPlatform()
