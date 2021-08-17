@@ -1,13 +1,13 @@
 @file:Suppress("MagicNumber", "SpellCheckingInspection")
 
 plugins {
-    kotlin("jvm") version "1.5.20"
+    kotlin("jvm") version "1.5.21"
     checkstyle
     id("com.github.sherter.google-java-format") version "0.9"
-    id("org.jmailen.kotlinter") version "3.4.5"
-    id("com.github.cs125-illinois.questioner") version "2021.6.15"
+    id("org.jmailen.kotlinter") version "3.5.0"
+    id("com.github.cs125-illinois.questioner") version "2021.8.1"
     id("com.github.ben-manes.versions") version "0.39.0"
-    id("io.gitlab.arturbosch.detekt") version "1.17.1"
+    id("io.gitlab.arturbosch.detekt") version "1.18.0"
 }
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ repositories {
 }
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.github.cs125-illinois.questioner:lib:2021.6.15")
+    implementation("com.github.cs125-illinois.questioner:lib:2021.8.1")
 }
 tasks.withType<Test> {
     useJUnitPlatform()
@@ -27,7 +27,7 @@ googleJavaFormat {
     toolVersion = "1.10.0"
 }
 checkstyle {
-    toolVersion = "8.42"
+    toolVersion = "8.45"
 }
 tasks.dependencyUpdates {
     fun String.isNonStable() = !(
