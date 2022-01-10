@@ -10,11 +10,7 @@ import edu.illinois.cs.cs125.questioner.lib.Wrap;
  */
 
 @SuppressWarnings("ManualMinMaxCalculation")
-@Correct(
-    name = "Fancy String Compare",
-    author = "challen@illinois.edu",
-    version = "2021.6.0",
-    solutionThrows = true)
+@Correct(name = "Fancy String Compare", author = "challen@illinois.edu", version = "2021.6.0")
 @Wrap
 public class Question {
   int fancyEquals(String first, String second) {
