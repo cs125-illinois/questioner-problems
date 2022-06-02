@@ -21,8 +21,12 @@ dependencies {
 tasks.withType<Test> {
   useJUnitPlatform()
   enableAssertions = true
+  val agentJarPath = configurations["runtimeClasspath"].resolvedConfiguration.resolvedArtifacts.find {
+    it.moduleVersion.id.group == "com.beyondgrader.resource-agent"
+  }!!.file.absolutePath
   jvmArgs(
     "-ea", "-Xms4G", "-Xmx8G", "--enable-preview", "-XX:+UseZGC",
+    "-javaagent:$agentJarPath",
     "-Dfile.encoding=UTF-8",
     "--add-exports", "jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED",
     "--add-exports", "jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED",
