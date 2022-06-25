@@ -18,7 +18,9 @@ public class Question {
     assert second != null;
     if (first.equals(second)) {
       return -1;
-    } else if (first.length() > second.length()) { // mutate-disable-conditional-boundary
+      // mutate-disable-conditional-boundary
+      // mutate-disable-modify-length-and-size
+    } else if (first.length() > second.length()) {
       return first.length();
     } else {
       return second.length();

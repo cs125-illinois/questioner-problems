@@ -1,7 +1,6 @@
 package com.examples.addoneclass;
 
 import edu.illinois.cs.cs125.questioner.lib.Correct;
-import edu.illinois.cs.cs125.questioner.lib.Wrap;
 
 /*
  * Write a class named `Question` with a single `static` method `addOne` that returns its `int` argument plus one.
