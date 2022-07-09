@@ -1,5 +1,7 @@
 @file:Suppress("MagicNumber", "SpellCheckingInspection")
 
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
   kotlin("jvm") version "1.7.0"
   checkstyle
@@ -57,4 +59,12 @@ tasks.check {
 }
 questioner {
   seed = 124
+}
+kotlinter {
+  disabledRules = arrayOf("filename", "package-name")
+}
+tasks.withType<KotlinCompile> {
+  kotlinOptions {
+    jvmTarget = JavaVersion.VERSION_17.toString()
+  }
 }

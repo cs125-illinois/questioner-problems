@@ -3,7 +3,6 @@ package com.examples.mayberecursivefactorial;
 import edu.illinois.cs.cs125.jenisol.core.FixedParameters;
 import edu.illinois.cs.cs125.jenisol.core.RandomParameters;
 import edu.illinois.cs.cs125.questioner.lib.Correct;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -26,8 +25,7 @@ public class Question {
     return input * factorial(input - 1);
   }
 
-  @FixedParameters
-  private static final List<Long> FIXED = Arrays.asList(-10L, -1L, 0L, 1L, 2L);
+  @FixedParameters private static final List<Long> FIXED = Arrays.asList(-10L, -1L, 0L, 1L, 2L);
 
   @RandomParameters
   private static long randomParameters(Random random) {
