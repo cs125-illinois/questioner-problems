@@ -9,7 +9,6 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.FeatureCheckException;
 import edu.illinois.cs.cs125.questioner.lib.Wrap;
 import edu.illinois.cs.cs125.questioner.lib.features.FeatureHelpers;
-
 import java.util.ArrayList;
 import java.util.List;
 

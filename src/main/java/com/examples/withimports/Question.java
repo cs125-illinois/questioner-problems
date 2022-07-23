@@ -1,8 +1,6 @@
-
 package com.examples.withimports;
 
 import edu.illinois.cs.cs125.questioner.lib.Correct;
-
 import java.util.Arrays;
 import java.util.List;
 
