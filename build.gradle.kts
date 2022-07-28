@@ -7,9 +7,9 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "3.11.1"
-  id("com.github.cs125-illinois.questioner") version "2022.7.4"
+  id("com.github.cs125-illinois.questioner") version "2022.7.5"
   id("com.github.ben-manes.versions") version "0.42.0"
-  id("io.gitlab.arturbosch.detekt") version "1.20.0"
+  id("io.gitlab.arturbosch.detekt") version "1.21.0"
 }
 repositories {
   mavenLocal()
@@ -19,7 +19,7 @@ repositories {
 }
 dependencies {
   implementation(kotlin("stdlib"))
-  implementation("com.github.cs125-illinois.questioner:lib:2022.7.4")
+  implementation("com.github.cs125-illinois.questioner:lib:2022.7.5")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
