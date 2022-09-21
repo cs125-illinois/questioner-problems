@@ -6,8 +6,8 @@ plugins {
   kotlin("jvm") version "1.7.10"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
-  id("org.jmailen.kotlinter") version "3.11.1"
-  id("com.github.cs125-illinois.questioner") version "2022.9.0"
+  id("org.jmailen.kotlinter") version "3.12.0"
+  id("com.github.cs125-illinois.questioner") version "2022.9.3"
   id("com.github.ben-manes.versions") version "0.42.0"
   id("io.gitlab.arturbosch.detekt") version "1.21.0"
 }
@@ -19,7 +19,7 @@ repositories {
 }
 dependencies {
   implementation(kotlin("stdlib"))
-  implementation("com.github.cs125-illinois.questioner:lib:2022.9.0")
+  implementation("com.github.cs125-illinois.questioner:lib:2022.9.3")
 }
 tasks.withType<Test> {
   useJUnitPlatform()

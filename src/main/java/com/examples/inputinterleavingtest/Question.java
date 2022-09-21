@@ -1,8 +1,5 @@
 package com.examples.inputinterleavingtest;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
 import edu.illinois.cs.cs125.jenisol.core.EdgeType;
 import edu.illinois.cs.cs125.jenisol.core.Limit;
 import edu.illinois.cs.cs125.jenisol.core.ProvideSystemIn;
@@ -10,6 +7,9 @@ import edu.illinois.cs.cs125.jenisol.core.RandomType;
 import edu.illinois.cs.cs125.jenisol.core.SimpleType;
 import edu.illinois.cs.cs125.jenisol.core.generators.SystemIn;
 import edu.illinois.cs.cs125.questioner.lib.Correct;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 /*
  * Testing STDIN generation and interleaving.
@@ -31,13 +31,13 @@ public class Question {
 
   @SimpleType
   private static final SystemIn[] SIMPLE =
-    new SystemIn[] {new SystemIn(Arrays.asList("Test", "Me"))};
+      new SystemIn[] {new SystemIn(Arrays.asList("Test", "Me"))};
 
   @EdgeType private static final SystemIn[] EDGE = new SystemIn[] {};
 
   @RandomType
   private static SystemIn randomInput(Random random) {
     return new SystemIn(
-      Arrays.asList(new String("" + random.nextInt()), new String("" + random.nextInt())));
+        Arrays.asList(new String("" + random.nextInt()), new String("" + random.nextInt())));
   }
 }
