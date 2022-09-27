@@ -10,7 +10,6 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
     name = "Print Sum",
     author = "challen@illinois.edu",
     version = "2021.6.0",
-    focused = true,
     maxDeadCode = 2)
 public class Question {
   public static void printSum(int first, int second) {
