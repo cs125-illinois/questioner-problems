@@ -3,7 +3,6 @@ package com.examples.withtemplateimports;
 import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.TemplateImports;
 import edu.illinois.cs.cs125.questioner.lib.Wrap;
-
 import java.util.Arrays;
 import java.util.List;
 

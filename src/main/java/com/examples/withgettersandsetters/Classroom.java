@@ -6,7 +6,10 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
  * Getter and setter testing.
  */
 
-@Correct(name = "Classroom Getters and Setters", version = "2022.9.0", author = "challen@illinois.edu")
+@Correct(
+    name = "Classroom Getters and Setters",
+    version = "2022.9.0",
+    author = "challen@illinois.edu")
 public class Classroom {
   private final String name;
   private int capacity;
