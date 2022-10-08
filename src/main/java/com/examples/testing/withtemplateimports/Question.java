@@ -1,4 +1,4 @@
-package com.examples.withtemplateimports;
+package com.examples.testing.withtemplateimports;
 
 import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.TemplateImports;

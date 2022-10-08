@@ -1,4 +1,4 @@
-package com.examples.withfeaturecheck.correct.kotlin
+package com.examples.testing.withfeaturecheck.correct.kotlin
 
 import edu.illinois.cs.cs125.questioner.lib.AlsoCorrect
 

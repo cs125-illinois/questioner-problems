@@ -1,4 +1,4 @@
-package com.examples.withemptyconstructor.correct.java.emptyconstructor;
+package com.examples.testing.withemptyconstructor.correct.java.emptyconstructor;
 
 import edu.illinois.cs.cs125.questioner.lib.AlsoCorrect;
 

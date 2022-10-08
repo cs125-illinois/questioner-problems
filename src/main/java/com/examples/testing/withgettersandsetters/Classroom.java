@@ -1,4 +1,4 @@
-package com.examples.withgettersandsetters;
+package com.examples.testing.withgettersandsetters;
 
 import edu.illinois.cs.cs125.questioner.lib.Correct;
 

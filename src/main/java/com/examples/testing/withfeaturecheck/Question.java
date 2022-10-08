@@ -1,4 +1,4 @@
-package com.examples.withfeaturecheck;
+package com.examples.testing.withfeaturecheck;
 
 import edu.illinois.cs.cs125.jeed.core.Features;
 import edu.illinois.cs.cs125.jenisol.core.BoundComplexity;
