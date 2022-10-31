@@ -7,7 +7,11 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
  * Testing @NotNull annotation on constructor parameters.
  */
 
-@Correct(name = "Test Constructor NotNull", version = "2022.10.0", author = "challen@illinois.edu", focused = true)
+@Correct(
+    name = "Test Constructor NotNull",
+    version = "2022.10.0",
+    author = "challen@illinois.edu",
+    focused = true)
 public class Question {
   private final int stringLength;
 
