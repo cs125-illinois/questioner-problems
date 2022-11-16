@@ -3,12 +3,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  kotlin("jvm") version "1.7.20"
+  kotlin("jvm") version "1.7.21"
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "3.12.0"
-  id("com.github.cs125-illinois.questioner") version "2022.10.7"
-  id("com.github.ben-manes.versions") version "0.43.0"
+  id("com.github.cs125-illinois.questioner") version "2022.11.1"
+  id("com.github.ben-manes.versions") version "0.44.0"
   id("io.gitlab.arturbosch.detekt") version "1.21.0"
 }
 repositories {
@@ -18,7 +18,7 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs125-illinois.questioner:lib:2022.10.7")
+  implementation("com.github.cs125-illinois.questioner:lib:2022.11.1")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
