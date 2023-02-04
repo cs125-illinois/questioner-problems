@@ -10,8 +10,7 @@ import edu.illinois.cs.cs125.questioner.lib.Correct;
 @Correct(
     name = "Test Constructor NotNull",
     version = "2022.10.0",
-    author = "challen@illinois.edu",
-    focused = true)
+    author = "challen@illinois.edu")
 public class Question {
   private final int stringLength;
 
