@@ -7,7 +7,7 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "3.13.0"
-  id("com.github.cs124-illinois.questioner") version "2023.2.0"
+  id("com.github.cs124-illinois.questioner") version "2023.2.2"
   id("com.github.ben-manes.versions") version "0.45.0"
   id("io.gitlab.arturbosch.detekt") version "1.22.0"
 }
@@ -18,7 +18,7 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs124-illinois.questioner:lib:2023.2.0")
+  implementation("com.github.cs124-illinois.questioner:lib:2023.2.2")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
@@ -45,7 +45,7 @@ checkstyle {
 }
 tasks.dependencyUpdates {
   fun String.isNonStable() = !(
-    listOf("RELEASE", "FINAL", "GA", "JRE").any { toUpperCase().contains(it) }
+    listOf("RELEASE", "FINAL", "GA", "JRE").any { uppercase().contains(it) }
       || "^[0-9,.v-]+(-r)?$".toRegex().matches(this)
     )
   rejectVersionIf { candidate.version.isNonStable() }
