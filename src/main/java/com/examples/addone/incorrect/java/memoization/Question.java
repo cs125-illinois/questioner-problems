@@ -27,6 +27,16 @@ public class Question {
       return 11;
     } else if (value == 11) {
       return 12;
+    } else if (value == 12) {
+      return 13;
+    } else if (value == 13) {
+      return 14;
+    } else if (value == 14) {
+      return 15;
+    } else if (value == 15) {
+      return 16;
+    } else if (value == 16) {
+      return 17;
     } else {
       return value + 1;
     }

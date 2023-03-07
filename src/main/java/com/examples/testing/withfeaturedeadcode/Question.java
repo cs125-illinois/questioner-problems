@@ -4,7 +4,6 @@ import edu.illinois.cs.cs125.jenisol.core.FixedParameters;
 import edu.illinois.cs.cs125.jenisol.core.RandomParameters;
 import edu.illinois.cs.cs125.questioner.lib.Correct;
 import edu.illinois.cs.cs125.questioner.lib.Wrap;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -24,8 +23,7 @@ public class Question {
     return values;
   }
 
-  @FixedParameters
-  private static final List<Integer> FIXED = Arrays.asList(0, 8);
+  @FixedParameters private static final List<Integer> FIXED = Arrays.asList(0, 8);
 
   @RandomParameters
   private static int randomParameters(Random random) {

@@ -7,8 +7,8 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "3.13.0"
-  id("com.github.cs124-illinois.questioner") version "2023.2.4"
-  id("com.github.ben-manes.versions") version "0.45.0"
+  id("com.github.cs124-illinois.questioner") version "2023.3.0"
+  id("com.github.ben-manes.versions") version "0.46.0"
   id("io.gitlab.arturbosch.detekt") version "1.22.0"
 }
 repositories {
@@ -18,7 +18,7 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs124-illinois.questioner:lib:2023.2.4")
+  implementation("com.github.cs124-illinois.questioner:lib:2023.3.0")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
@@ -68,4 +68,7 @@ tasks.withType<KotlinCompile> {
   kotlinOptions {
     jvmTarget = JavaVersion.VERSION_17.toString()
   }
+}
+tasks.detekt {
+  dependsOn(tasks.generateQuestionMetatests)
 }
