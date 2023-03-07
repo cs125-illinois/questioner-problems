@@ -43,3 +43,4 @@ test-output/
 .env
 .validation.json
 report.html
+.questioner.yaml
