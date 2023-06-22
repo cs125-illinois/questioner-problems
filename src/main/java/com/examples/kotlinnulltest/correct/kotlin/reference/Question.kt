@@ -10,6 +10,6 @@ import edu.illinois.cs.cs125.questioner.lib.AlsoCorrect
  */
 
 fun length(test: String?): Int {
-  require(test != null)
+  requireNotNull(test)
   return test.length
 }
