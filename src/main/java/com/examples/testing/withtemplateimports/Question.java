@@ -14,7 +14,7 @@ import java.util.List;
 @Wrap
 @TemplateImports(paths = "java.util.List,java.util.ArrayList,java.util.Arrays")
 public class Question {
-  public static List<Integer> max(int first, int second) {
+  List<Integer> max(int first, int second) {
     return Arrays.asList(first, second);
   }
 }
