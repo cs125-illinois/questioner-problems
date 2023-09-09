@@ -7,8 +7,8 @@ plugins {
   checkstyle
   id("com.github.sherter.google-java-format") version "0.9"
   id("org.jmailen.kotlinter") version "3.16.0"
-  id("com.github.cs124-illinois.questioner") version "2023.9.0"
-  id("com.github.ben-manes.versions") version "0.47.0"
+  id("com.github.cs124-illinois.questioner") version "2023.9.3"
+  id("com.github.ben-manes.versions") version "0.48.0"
   id("io.gitlab.arturbosch.detekt") version "1.23.1"
 }
 repositories {
@@ -18,7 +18,7 @@ repositories {
   maven("https://maven.codeawakening.com")
 }
 dependencies {
-  implementation("com.github.cs124-illinois.questioner:lib:2023.9.0")
+  implementation("com.github.cs124-illinois.questioner:lib:2023.9.3")
 }
 tasks.withType<Test> {
   useJUnitPlatform()
